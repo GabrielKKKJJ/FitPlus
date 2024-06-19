@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ImcFragment"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:id="@+id/titleImc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="Cálculadora IMC"
+        android:textColor="@color/white" />
+
+<!--    Container Cálculo de IMC-->
+    <View
+        android:id="@+id/containerInputCalculator"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/background_rounded"
+        app:circularflow_angles="100px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="65dp"
+        android:layout_marginTop="125dp"
+        android:hint="Altura em metros"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:paddingBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="180dp"
+        android:hint="Peso em Kg"
+        android:inputType="numberDecimal"
+        android:paddingBottom="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/backgorund_semirounded"
+        app:backgroundTint="@color/btn_selector_state"
+        android:layout_marginTop="240dp"
+        android:text="Calcular"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:paddingVertical="10dp"/>
+
+<!--    Container Resultado-->
+    <TextView
+        android:id="@+id/tittleResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seu IMC:"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="350dp"/>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="400dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/inputBackground"
+            />
+
+        <!--    Container Tabela IMC-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center|bottom">
+
+            <!--    Container níveis de IMC-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IMC"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/textLink" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menor que 18,5"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entre 18,5 e 24,9"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entre 25,0 e 29,9"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entre 30,0 e 39,9"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maior que 40,0"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/inputBackground"
+                android:layout_gravity="center|bottom"
+                />
+
+            <!--    Classificação IMC-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Classificações"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textLink"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Magreza"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sobrepeso"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obesidade"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obesidade Grave"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

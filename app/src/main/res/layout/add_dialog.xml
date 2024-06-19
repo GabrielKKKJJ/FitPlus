@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:layout_gravity="center"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/nomeAtividade"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingVertical="8dp"
+            android:hint="Digite o nome da atividade"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:background="@drawable/white_bg_rounded"
+            />
+
+        <TextView
+            android:id="@+id/TipoAtividade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecionar Exercício"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/tipoAtividadeSpinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_bg_rounded" />
+
+        <!-- Edits Texts LinearLayout horizontal-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!--        LinearLayout vertical repetições e minutos-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginRight="50dp">
+
+                <!--            Container repetições-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/Repeticoes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Repetições"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/txtValueRepeticoes"
+                        android:inputType="number"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_bg_rounded"
+                        android:padding="8dp"
+                        android:hint="0"
+                        android:textColorHint="@color/black"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <!--            Container minutos-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tempo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Minutos"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+
+                    <EditText
+                        android:id="@+id/txtValueTempo"
+                        android:inputType="number"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_bg_rounded"
+                        android:padding="8dp"
+                        android:hint="0"
+                        android:textColorHint="@color/black"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--         LinearLayout vertical Kilometros e calorias-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <!--            Container Kilometros-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KM"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/txtValueKm"
+                        android:inputType="number"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_bg_rounded"
+                        android:padding="8dp"
+                        android:hint="0"
+                        android:textColorHint="@color/black"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <!--            Container Calorias-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/calorias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calorias"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+
+                    <EditText
+                        android:id="@+id/txtValueCalorias"
+                        android:inputType="number"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_bg_rounded"
+                        android:padding="8dp"
+                        android:hint="0"
+                        android:textColorHint="@color/black"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/metaLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meta"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/metaSpinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_bg_rounded" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,8 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green">#42FF00</color>
+    <color name="darkGreen">#35CD00</color>
     <color name="background">#101318</color>
     <color name="buttonBackground">#4355BF</color>
     <color name="inputBackground">#292E3D</color>
     <color name="textLink">#6E7ECF</color>
+    <color name="separator">#6F7FAC</color>
 </resources>

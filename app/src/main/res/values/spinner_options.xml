@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Opcoes">
+        <item>Musculação</item>
+        <item>Caminhada</item>
+        <item>Corrida</item>
+        <item>Ciclismo</item>
+        <item>Natação</item>
+        <item>Yoga</item>
+        <item>Pilates</item>
+        <item>Futebol</item>
+        <item>Basquete</item>
+        <item>Tênis</item>
+    </string-array>
+</resources>
