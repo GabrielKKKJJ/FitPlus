@@ -75,14 +75,5 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
           <b>Djordan Gabriel</b>
         </sub>
       </a>
-    </td>
-    <td align="center">
-      <a href="" title="Bruna Cardoso">
-        <img src="https://i.ibb.co/fYNkVKm/bruna-Foto.jpg" width="150px;" alt="Foto da Bruna Cardoso"/><br>
-        <sub>
-          <b>Bruna Cardoso</b>
-        </sub>
-      </a>  
-    </td>
   </tr>
 </table>
