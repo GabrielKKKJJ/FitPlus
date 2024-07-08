@@ -4,6 +4,12 @@
 
 > O FIT+ é um aplicativo de saúde e bem-estar que ajuda os usuários a alcançar e manter um estilo de vida saudável, fornecendo uma maneira intuitiva e eficaz de estabelecer hábitos saudáveis, definir metas realistas e acompanhar o progresso de forma consistente.
 
+### 📸 Imagens
+
+![image](https://github.com/GabrielKKKJJ/FitPlus/assets/123528138/2573835e-0157-4e16-8b58-f4ec3ef61c5e)
+![image](https://github.com/GabrielKKKJJ/FitPlus/assets/123528138/5d007990-c135-4805-9f30-814b503594e9)
+
+
 ### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
